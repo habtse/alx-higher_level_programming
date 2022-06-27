@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 3-rectangle.py
+# 5-rectangle.py
 """Defines a Rectangle class."""
 
 
@@ -73,4 +73,4 @@ class Rectangle:
     
     def __del__(self):
         """Return the string."""
-        return ("Bye rectangle...")
+        return("Bye rectangle...")
