@@ -52,7 +52,10 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
     
     def __str__(self):
-        """Return the str format of the Rectangle."""
+        """Return the printable representation of the Rectangle.
+
+        Represents the rectangle with the # character.
+        """
         if self.__width == 0 and self.__height == 0:
-            return ""
+            return ("")
         return ((f"{'#' * self.__width} \n") * self.__height) 
