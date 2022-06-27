@@ -70,7 +70,7 @@ class Rectangle:
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
         return (rect)
-    
+
     def __del__(self):
-        """Return the string."""
-        return("Bye rectangle...")
+        """Print a message for every deletion of a Rectangle."""
+        print("Bye rectangle...")
