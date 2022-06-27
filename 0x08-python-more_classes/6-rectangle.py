@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 3-rectangle.py
+# 6-rectangle.py
 """Defines a Rectangle class."""
 
 
@@ -7,6 +7,7 @@ class Rectangle:
     """Represent a rectangle."""
     
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
         Args:
@@ -16,7 +17,6 @@ class Rectangle:
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
-
     @property
     def width(self):
         """Get/set the width of the Rectangle."""
@@ -72,8 +72,8 @@ class Rectangle:
         rect = "Rectangle(" + str(self.__width)
         rect += ", " + str(self.__height) + ")"
         return (rect)
-    
+
     def __del__(self):
-        """Return the string."""
-        Rectangle.number_of_instance -= 1
-        return ("Bye rectangle...")
+        """Print a message for every deletion of a Rectangle."""
+        Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
