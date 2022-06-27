@@ -2,10 +2,13 @@
 #1-rectangle.py
 '''Define rectangle class'''
 
+
 class Rectangle:
     '''representation of class Rectangle'''
+
     def __init__(self,width = 0,height = 0):
         ''' initializing the attribute of Rectangle
+    
         Args: 
             width(int): the width of the new rectangle
             height(int): the height of the new rectangle
