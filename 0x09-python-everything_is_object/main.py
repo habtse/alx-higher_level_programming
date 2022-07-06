@@ -10,4 +10,5 @@ print(my_list)
 print(new_list)
 
 print(new_list == my_list)
+print("for practice")
 print(new_list is my_list)
